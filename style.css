@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Background video */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Konten */
+.container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+  margin-bottom: 10px;
+}
+
+.profile h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profile p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.profile span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* Tombol link */
+.links {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 300px;
+  padding: 12px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+  color: white;
+  font-size: 16px;
+}
+
+.btn i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+/* Warna tombol */
+.whatsapp { background: #25d366; }
+.discord { background: #5865f2; }
+.tiktok { background: #000000; }
+.instagram { background: #e1306c; }
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  .profile h2 {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
